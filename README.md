@@ -1,0 +1,1 @@
+# JaxRs and CDI Goodies
