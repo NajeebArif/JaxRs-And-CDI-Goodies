@@ -50,6 +50,7 @@ public class GreetingEndpoint {
         String msg = randomGreetings.greetTheUser(username);
         GreetingsEventType evt = new GreetingsEventType();
 //        evt.setGreeter(randomGreetings.getClass().getAnnotationsByType(GreetingsFrom.class));
+        evt.setGreetingMessage(msg);
         evt.setGreetingsTime(LocalDateTime.now());
         greetingsEvent.fire(evt);
         return msg;
